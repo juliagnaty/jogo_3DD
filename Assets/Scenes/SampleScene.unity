@@ -205,12 +205,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.99539036, z: -0.09590658, w: 0}
-  m_LocalPosition: {x: -1, y: 4.18, z: 12.47}
+  m_LocalRotation: {x: 0.09590658, y: -0, z: -0, w: 0.99539036}
+  m_LocalPosition: {x: 2.0674853, y: 4.18, z: -14.9800005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1249866640}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 11.007, y: 180, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
@@ -598,11 +598,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.2719862, y: 3.7500918, z: 1.0906608}
   m_Center: {x: -0.89151394, y: -0.105772614, z: 1.2994944}
---- !u!4 &1249866640 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 53e17f49b6bb5f1439a3dce220751c28, type: 3}
-  m_PrefabInstance: {fileID: 1337168191}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1249866641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,12 +607,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1249866637}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8892f515ba86f54aa72e0f2d37145b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 75459bbe5fed23e47aa7b2a61e27cd58, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
-  jumpForce: 5
-  moveSpeed: 5
-  cam: {fileID: 330585546}
+  m_EditorClassIdentifier: Assembly-CSharp::ViniMovePlayer
+  velocidade: 5
+  forcaPulo: 6
 --- !u!1001 &1337168191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -675,10 +669,7 @@ PrefabInstance:
     - {fileID: 65702495048144492, guid: 53e17f49b6bb5f1439a3dce220751c28, type: 3}
     - {fileID: -8700617353114198275, guid: 53e17f49b6bb5f1439a3dce220751c28, type: 3}
     - {fileID: 7869873546869171050, guid: 53e17f49b6bb5f1439a3dce220751c28, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 53e17f49b6bb5f1439a3dce220751c28, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 330585546}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 53e17f49b6bb5f1439a3dce220751c28, type: 3}
       insertIndex: -1
@@ -704,7 +695,7 @@ GameObject:
   - component: {fileID: 1625477910}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Ground
+  m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -918,6 +909,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 855042575}
